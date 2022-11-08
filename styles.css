@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    /* background-color: gray; */
 }
 
 *, *::before, *::after {
@@ -27,6 +28,7 @@ body {
     left: 0;
     margin-right: 20px;
     border-right: solid;
+    /* background-color: lightslategray; */
 }
 
 #no-bullets {
@@ -51,10 +53,13 @@ body {
 }
 
 header {
+    font-size: 25px;
     font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-code {
+.code-box {
     display: block;
     text-align: left;
     /* white-space: pre; */
@@ -72,6 +77,10 @@ code {
 
 .code-text {
     color: white;
+}
+
+.inline-code {
+    color: dodgerblue;
 }
 
 .code-text:first-of-type {
