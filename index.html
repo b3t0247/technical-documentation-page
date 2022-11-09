@@ -16,7 +16,6 @@
                 <li><a class="nav-link" href="#HTML_Basic_Examples">HTML Basic Examples</a></li>
                 <li><a class="nav-link" href="#HTML_Elements">HTML Elements</a></li>
                 <li><a class="nav-link" href="#HTML_Attributes">HTML Attributes</a></li>
-                <li><a class="nav-link" href="#HTML_Headings">HTML Headings</a></li>
                 <li><a class="nav-link" href="#HTML_Paragraphs">HTML Paragraphs</a></li>
                 <li><a class="nav-link" href="#HTML_Styles">HTML Styles</a></li>
                 <li><a class="nav-link" href="#HTML_Text_Formatting">HTML Text Formatting</a></li>
@@ -125,7 +124,7 @@
                         <li>Save the file on your computer. Select File > Save as in the Notepad menu.</li>
                         <li>Name the file "index.htm" and set the encoding to UTF-8 (which is the preferred encoding for HTML files).</li><br>
                         <img src="./images/img_saveas.png" alt="Save as">
-                        <p class="tip"><strong>Tip:</strong> You can use either .htm or .html as file extension. There is no difference; it is up to you.</p>
+                        <p><strong class="tip">Tip:</strong> You can use either .htm or .html as file extension. There is no difference; it is up to you.</p>
                     </ul>
                     <h3>Step 4: View the HTML Page in Your Browser</h3>
                     <ul id="no-bullets">
@@ -298,11 +297,79 @@
             </section>
             <section class="main-section" id="HTML_Attributes">
                 <header>HTML Attributes</header>
-                <p></p>
-            </section>
-            <section class="main-section" id="HTML_Headings">
-                <header>HTML Headings</header>
-                <p></p>
+                <article>
+                    <p>HTML attributes provide additional information about HTML elements.</p>
+                    <h3>HTML Attributes</h3>
+                    <ul>
+                        <li>All HTML elements can have attributes</li>
+                        <li>Attributes provide additional information about elements</li>
+                        <li>Attributes are always specified in the start tag</li>
+                        <li>Attributes usually come in name/value pairs like: name="value"</li>
+                    </ul>
+                    <h3>The href Attribute</h3>
+                    <ul id="no-bullets">
+                        <li>The <strong class="inline-code">&lt;a&gt;</strong> tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to:</li>
+                    </ul>
+                    <code class="code-box">
+                        <strong class="code-text" id="example-code">Example:</strong><br><br>
+                        &lt;a href="https://www.w3schools.com"&gt; <strong class="code-text"> Visit W3Schools </strong>&lt;/a&gt;
+                    </code>
+                    <h3>The src Attribute</h3>
+                    <ul id="no-bullets">
+                        <li>The <strong class="inline-code">&lt;img&gt;</strong> tag is used to embed an image in an HTML page. The src attribute specifies the path to the image to be displayed:</li>
+                    </ul>
+                    <code class="code-box">
+                        <strong class="code-text" id="example-code">Example:</strong><br><br>
+                        &lt;img src="img_girl.jpg"&gt;
+                    </code>
+                    <ul id="no-bullets">
+                        <li>There are two ways to specify the URL in the src attribute:</li><br>
+                        <li>1. <strong>Absolute URL</strong> - Links to an external image that is hosted on another website. Example: src="https://www.w3schools.com/images/img_girl.jpg".</li>
+                        <li><strong>Notes:</strong> External images might be under copyright. If you do not get permission to use it, you may be in violation of copyright laws. In addition, you cannot control external images; it can suddenly be removed or changed.</li><br>
+                        <li>2. <strong>Relative URL</strong>- Links to an image that is hosted within the website. Here, the URL does not include the domain name. If the URL begins without a slash, it will be relative to the current page. Example: src="img_girl.jpg". If the URL begins with a slash, it will be relative to the domain. Example: src="/images/img_girl.jpg".</li><br>
+                        <li><strong class="tip">Tip:</strong> It is almost always best to use relative URLs. They will not break if you change domain.</li>
+                    </ul>
+                    <h3>The alt Attribute</h3>
+                    <p>The required <strong class="inline-code">alt</strong> attribute for the <strong class="inline-code">&lt;img&gt;</strong> tag specifies an alternate text for an image, if the image for some reason cannot be displayed. This can be due to a slow connection, or an error in the <strong class="inline-code">src</strong> attribute, or if the user uses a screen reader.</p>
+                    <code class="code-box">
+                        <strong class="code-text" id="example-code">Example:</strong><br><br>
+                        &lt;img src="img_girl.jpg" alt="Girl with a jacket"&gt;
+                    </code>
+                    <h3>The style Attribute</h3>
+                    <p>The <strong class="inline-code">style</strong> attribute is used to add styles to an element, such as color, font, size, and more.</p>
+                    <code class="code-box">
+                        <strong class="code-text" id="example-code">Example:</strong><br><br>
+                        &lt;p style="color:red;"&gt; <strong class="code-text"> This is a red paragraph. </strong>&lt;/p&gt;
+                    </code>
+                    <h3>The lang Attribute</h3>
+                    <p>You should always include the <strong class="inline-code">lang</strong> attribute inside the <strong class="inline-code">&lt;html&gt;</strong> tag, to declare the language of the Web page. This is meant to assist search engines and browsers.</p>
+                    <p>The following example specifies English as the language:</p>
+                    <code class="code-box">
+                        &lt;!DOCTYPE html&gt;<br>
+                        &lt;html lang="en"&gt;<br>
+                        &lt;body&gt;<br>
+                        ... <br>
+                        &lt;/body&gt;<br>
+                        &lt;/html&gt;
+                    </code><br>
+                    <p>Country codes can also be added to the language code in the lang attribute. So, the first two characters define the language of the HTML page, and the last two characters define the country.</p>
+                    <p>The following example specifies English as the language and United States as the country:</p>
+                    <code class="code-box">
+                        &lt;!DOCTYPE html&gt;<br>
+                        &lt;html lang="en-US"&gt;<br>
+                        &lt;body&gt;<br>
+                        ... <br>
+                        &lt;/body&gt;<br>
+                        &lt;/html&gt;
+                    </code><br>
+                    <h3>The title Attribute</h3>
+                    <p>The <strong class="inline-code">title</strong> attribute defines some extra information about an element.</p>
+                    <p>The value of the title attribute will be displayed as a tooltip when you mouse over the element:</p>
+                    <code class="code-box">
+                        <strong class="code-text" id="example-code">Example:</strong><br><br>
+                        &lt;p title="I'm a tooltip">&gt;<strong class="code-text"> This is a paragraph. </strong>&lt;/p&gt;<br>
+                    </code>
+                </article>
             </section>
             <section class="main-section" id="HTML_Paragraphs">
                 <header>HTML Paragraphs</header>
