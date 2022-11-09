@@ -51,7 +51,9 @@ body {
 
 #main-doc {
     position: absolute;
-    margin-left: 300px;
+    margin-left: 350px;
+    margin-right: 100px;
+    /* border: 2px solid red; */
 }
 
 header {
@@ -64,9 +66,10 @@ header {
 .code-box {
     display: block;
     text-align: left;
-    padding-left: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    /* padding-left: 30px; */
+    /* padding-top: 30px; */
+    /* padding-bottom: 30px; */
+    padding: 30px;
     width: 100%;
     background-color: rgb(17, 17, 56);
     color: dodgerblue;
@@ -75,13 +78,15 @@ header {
 
 .code-text {
     color: white;
+    font-weight: bold;
+    font-size: 13px;
 }
 
 .inline-code {
     color: dodgerblue;
 }
 
-.code-text:first-of-type {
+#example-code {
     font-size: 1rem;
     /* font-style: italic; */
 }

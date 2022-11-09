@@ -33,9 +33,7 @@
                     <p>
                         HTML is the standard markup language for creating Web pages.
                     </p>
-                    <p>
-                        What is HTML?
-                    </p>
+                    <h3>What is HTML?</h3>
                     <ul>
                         <li>HTML stands for Hyper Text Markup Language</li>
                         <li>HTML is the standard markup language for creating Web pages</li>
@@ -44,11 +42,9 @@
                         <li>HTML elements tell the browser how to display the content</li>
                         <li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</li>
                     </ul>
-                    <p>
-                        A Simple HTML Document
-                    </p>
+                    <h3>A Simple HTML Document</h3>
                     <code class="code-box">
-                        <strong class="code-text">Example Code:</strong><br><br>
+                        <strong class="code-text" id="example-code">Example Code:</strong><br><br>
                         &lt;!DOCTYPE html&gt;<br>
                         &lt;html&gt;<br>
                         &lt;head&gt;<br>
@@ -60,9 +56,7 @@
                         &lt;/body&gt;<br>
                         &lt;/html&gt;
                     </code><br>
-                    <p>
-                        Example Explained
-                    </p>
+                    <h3>Example Explained</h3>
                     <ul>
                         <li>The <strong class="inline-code">&lt;!DOCTYPE html&gt;</strong> declaration defines that this document is an HTML5 document</li>
                         <li>The <strong class="inline-code">&lt;html&gt;</strong> element is the root element of an HTML page</li>
@@ -72,7 +66,7 @@
                         <li>The <strong class="inline-code">&lt;h1&gt;</strong> element defines a large heading</li>
                         <li>The <strong class="inline-code">&lt;p&gt;</strong> element defines a paragraph</li>
                     </ul>
-                    <p>What is an HTML Element?</p>
+                    <h3>What is an HTML Element?</h3>
                     <p>An HTML element is defined by a start tag, some content, and an end tag:</p>
                     <code class="code-box">
                         <strong class="inline-code">&lt;tagname&gt;</strong><strong class="code-text"> Content goes here... </strong><strong class="inline-code">&lt;/tagname&gt;</strong>
@@ -90,15 +84,217 @@
             </section>
             <section class="main-section" id="HTML_Editors">
                 <header>HTML Editors</header>
-                <p></p>
+                <article>
+                    <p>
+                        A simple text editor is all you need to learn HTML.
+                    </p>
+                    <h3>Learn HTML Using Notepad or TextEdit</h3>
+                    <p>
+                        Web pages can be created and modified by using professional HTML editors. However, for learning HTML we recommend a simple text editor like Notepad (PC) or TextEdit (Mac). We believe that using a simple text editor is a good way to learn HTML. Follow the steps below to create your first web page with Notepad or TextEdit.
+                    </p>
+                    <h3>Step 1: Open Notepad (PC)</h3>
+                    <ul id="no-bullets">
+                        <li>Windows 8 or later:</li>
+                        <li>Open the Start Screen (the window symbol at the bottom left on your screen). Type Notepad.</li><br>
+                        <li>Windows 7 or earlier:</li>
+                        <li>Open Start > Programs > Accessories > Notepad</li>
+                    </ul>
+                    <h3>Step 1: Open TextEdit (Mac)</h3>
+                    <ul id="no-bullets">
+                        <li>Open Finder > Applications > TextEdit</li>
+                        <li>Also change some preferences to get the application to save files correctly. In Preferences > Format > choose "Plain Text"</li><br>
+                        <li>Then under "Open and Save", check the box that says "Display HTML files as HTML code instead of formatted text".</li>
+                        <li>Then open a new document to place the code.</li>
+                    </ul>
+                    <h3>Step 2: Write Some HTML</h3>
+                    <ul id="no-bullets">
+                        <li>Write or copy the following HTML code into Notepad</li>
+                    </ul>
+                    <code class="code-box">
+                        &lt;!DOCTYPE html&gt;<br>
+                        &lt;html&gt;<br>
+                        &lt;body&gt;<br><br>
+                        &lt;h1&gt;<strong class="code-text"> My First Heading </strong>&lt;/h1&gt;<br>
+                        &lt;p&gt;<strong class="code-text"> My First Paragraph </strong>&lt;/p&gt;<br><br>
+                        &lt;/body&gt;<br>
+                        &lt;/html&gt;
+                    </code><br>
+                    <img src="./images/img_notepad.png" alt="Notepad">
+                    <h3>Step 3: Save the HTML Page</h3>
+                    <ul id="no-bullets">
+                        <li>Save the file on your computer. Select File > Save as in the Notepad menu.</li>
+                        <li>Name the file "index.htm" and set the encoding to UTF-8 (which is the preferred encoding for HTML files).</li><br>
+                        <img src="./images/img_saveas.png" alt="Save as">
+                        <p class="tip"><strong>Tip:</strong> You can use either .htm or .html as file extension. There is no difference; it is up to you.</p>
+                    </ul>
+                    <h3>Step 4: View the HTML Page in Your Browser</h3>
+                    <ul id="no-bullets">
+                        <li>Open the saved HTML file in your favorite browser (double click on the file, or right-click - and choose "Open with").</li>
+                        <li>The result will look much like this:</li><br>
+                        <img src="./images/img_chrome.png" alt="chrome">
+                    </ul>
+                </article>
             </section>
             <section class="main-section" id="HTML_Basic_Examples">
                 <header>HTML Basic Examples</header>
-                <p></p>
+                <article>
+                    <p>In this chapter we will show some basic HTML examples. Don't worry if we use tags you have not learned about yet.</p>
+                    <h3>HTML Documents</h3>
+                    <ul id="no-bullets">
+                        <li>All HTML documents must start with a document type declaration: <strong class="inline-code">&lt;!DOCTYPE html&gt;.</strong></li>
+                        <li>The HTML document itself begins with <strong class="inline-code">&lt;html&gt;</strong> and ends with <strong class="inline-code">&lt;/html&gt;</strong>.</li>
+                        <li>The visible part of the HTML document is between <strong class="inline-code">&lt;body&gt;</strong> and <strong class="inline-code">&lt;/body&gt;</strong>.</li>
+                    </ul>
+                    <code class="code-box">
+                        <strong class="code-text" id="example-code">Example:</strong><br><br>
+                        &lt;!DOCTYPE html&gt;<br>
+                        &lt;html&gt;<br>
+                        &lt;body&gt;<br><br>
+                        &lt;h1&gt;<strong class="code-text"> My First Heading </strong>&lt;/h1&gt;<br>
+                        &lt;p&gt;<strong class="code-text"> My First Paragraph </strong>&lt;/p&gt;<br><br>
+                        &lt;/body&gt;<br>
+                        &lt;/html&gt;
+                    </code><br>
+                    <h3>The <strong class="inline-code">&lt;!DOCTYPE&gt;</strong> Declaration</h3>
+                    <ul id="no-bullets">
+                        <li>The <strong class="inline-code">&lt;!DOCTYPE&gt;</strong> declaration represents the document type, and helps browsers to display web pages correctly.</li>
+                        <li>It must only appear once, at the top of the page (before any HTML tags).</li>
+                        <li>The <strong class="inline-code">&lt;!DOCTYPE&gt;</strong> declaration is not case sensitive.</li>
+                        <li>The <strong class="inline-code">&lt;!DOCTYPE&gt;</strong> declaration for HTML5 is:</li>
+                    </ul>
+                    <code class="code-box">
+                        &lt;!DOCTYPE html&gt;<br>
+                    </code><br>
+                    <h3>HTML Headings</h3>
+                    <ul id="no-bullets">
+                        <li>HTML headings are defined with the <strong class="inline-code">&lt;h1&gt;</strong> to  <strong class="inline-code">&lt;h6&gt;</strong> tags.</li>
+                        <li><strong class="inline-code">&lt;h1&gt;</strong> defines the most important heading. <strong class="inline-code">&lt;h6&gt;</strong> defines the least important heading:</li>
+                    </ul>
+                    <code class="code-box">
+                        <strong class="code-text" id="example-code">Example:</strong><br><br>
+                        &lt;h1&gt;<strong class="code-text"> My First Heading </strong>&lt;/h1&gt;<br>
+                        &lt;h2&gt;<strong class="code-text"> My First Heading </strong>&lt;/h2&gt;<br>
+                        &lt;h3&gt;<strong class="code-text"> My First Heading </strong>&lt;/h3&gt;<br>
+                    </code>
+                    <h3>HTML Paragraphs</h3>
+                    <p>HTML paragraphs are defined with the <strong class="inline-code">&lt;p&gt;</strong> tag:</p>
+                    <code class="code-box">
+                        <strong class="code-text" id="example-code">Example:</strong><br><br>
+                        &lt;p&gt;<strong class="code-text"> This is a paragraph. </strong>&lt;/p&gt;<br>
+                        &lt;p&gt;<strong class="code-text"> This is another paragraph .</strong>&lt;/p&gt;<br>
+                    </code>
+                    <h3>HTML Links</h3>
+                    <p>HTML links are defined with the <strong class="inline-code">&lt;a&gt;</strong> tag:</p>
+                    <code class="code-box">
+                        <strong class="code-text" id="example-code">Example:</strong><br><br>
+                        &lt;a href="https://www.w3schools.com"&gt; <strong class="code-text"> This is a link </strong>&lt;/a&gt;
+                    </code>
+                    <ul id="no-bullets">
+                        <li>The link's destination is specified in the <strong class="inline-code"> href </strong> attribute.</li>
+                        <li>Attributes are used to provide additional information about HTML elements.</li>
+                        <li>You will learn more about attributes in a later chapter.</li>
+                    </ul>
+                    <h3>HTML Images</h3>
+                    <ul id="no-bullets">
+                        <li>HTML images are defined with the <strong class="inline-code">&lt;img&gt;</strong> tag.</li>
+                        <li>The source file (<strong class="inline-code">src</strong>), alternative text (<strong class="inline-code">alt</strong>), <strong class="inline-code">width</strong>, and <strong class="inline-code">height</strong> are provided as attributes:</li>
+                    </ul>
+                    <code class="code-box">
+                        <strong class="code-text" id="example-code">Example:</strong><br><br>
+                        &lt;img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142" &gt;
+                    </code>
+                </article>
             </section>
             <section class="main-section" id="HTML_Elements">
                 <header>HTML Elements</header>
-                <p></p>
+                <article>
+                    <p>An HTML element is defined by a start tag, some content, and an end tag.</p>
+                    <h3>HTML Elements</h3>
+                    <ul id="no-bullets">
+                        <li>The HTML element is everything from the start tag to the end tag:</li><br>
+                        <li><strong class="inline-code">&lt;tagname&gt;</strong> Content goes here... <strong class="inline-code">&lt;/tagname&gt;</strong> </li><br>
+                        <li>Examples of some HTML elements:</li><br>
+                        <li><strong class="inline-code">&lt;h1&gt;</strong> My First Heading <strong class="inline-code">&lt;/h1&gt;</strong></li>
+                        <li><strong class="inline-code">&lt;p&gt;</strong> first paragraph. <strong class="inline-code">&lt;/p&gt;</strong></li>
+                    </ul>
+                    <p><strong class="tip">TIP:</strong> Some HTML elements have no content (like the <strong class="inline-code">&lt;br&gt;</strong> element). These elements are called empty elements. Empty elements do not have an end tag!</p>
+                    <h3>Nested HTML Elements</h3>
+                    <ul id="no-bullets">
+                        <li>HTML elements can be nested (this means that elements can contain other elements).</li>
+                        <li>All HTML documents consist of nested HTML elements.</li>
+                        <li>The following example contains four HTML elements (<strong class="inline-code">&lt;html&gt;</strong>, <strong class="inline-code">&lt;body&gt;</strong>, <strong class="inline-code">&lt;h1&gt;</strong> and <strong class="inline-code">&lt;p&gt;</strong>):<li>
+                    </ul>
+                    <code class="code-box">
+                        <strong class="code-text" id="example-code">Example:</strong><br><br>
+                        &lt;!DOCTYPE html&gt;<br>
+                        &lt;html&gt;<br>
+                        &lt;body&gt;<br><br>
+                        &lt;h1&gt;<strong class="code-text"> My First Heading </strong>&lt;/h1&gt;<br>
+                        &lt;p&gt;<strong class="code-text"> My First Paragraph </strong>&lt;/p&gt;<br><br>
+                        &lt;/body&gt;<br>
+                        &lt;/html&gt;
+                    </code><br>
+                    <h3>Example Explained</h3>
+                    <ul id="no-bullets">
+                        <li>The <strong class="inline-code">&lt;html&gt;</strong> element is the root element and it defines the whole HTML document.</li>
+                        <li>It has a start tag <strong class="inline-code">&lt;html&gt;</strong> and an end tag <strong class="inline-code">&lt;/html&gt;</strong>.</li>
+                        <li>Then, inside the <strong class="inline-code">&lt;html&gt;</strong> element there is a <strong class="inline-code">&lt;body&gt;</strong> element:</li>
+                    </ul><br>
+                    <code class="code-box">
+                        &lt;body&gt;<br><br>
+                        &lt;h1&gt;<strong class="code-text"> My First Heading </strong>&lt;/h1&gt;<br>
+                        &lt;p&gt;<strong class="code-text"> My First Paragraph </strong>&lt;/p&gt;<br><br>
+                        &lt;/body&gt;<br>
+                        &lt;/html&gt;
+                    </code><br>
+                    <ul id="no-bullets">
+                        <li>The <strong class="inline-code">&lt;body&gt;</strong> element defines the document's body.</li>
+                        <li>It has a start tag <strong class="inline-code">&lt;body&gt;</strong> and an end tag <strong class="inline-code">&lt;/body&gt;</strong>.</li>
+                        <li>Then, inside the <strong class="inline-code">&lt;body&gt;</strong> element there are two other elements: <strong class="inline-code">&lt;h1&gt;</strong> and <strong class="inline-code">&lt;p&gt;</strong></li>
+                    </ul>
+                    <code class="code-box">
+                        &lt;h1&gt;<strong class="code-text"> My First Heading </strong>&lt;/h1&gt;<br>
+                        &lt;p&gt;<strong class="code-text"> My First Paragraph </strong>&lt;/p&gt;<br>
+                    </code><br>
+                    <ul id="no-bullets">
+                        <li>The <strong class="inline-code">&lt;h1&gt;</strong> element defines a heading.</li>
+                        <li>It has a start tag <strong class="inline-code">&lt;h1&gt;</strong> and an end tag <strong class="inline-code">&lt;/h1&gt;</strong></li>
+                    </ul>
+                    <code class="code-box">
+                        &lt;h1&gt;<strong class="code-text"> My First Heading </strong>&lt;/h1&gt;<br>
+                    </code><br>
+                    <ul id="no-bullets">
+                        <li>The <strong class="inline-code">&lt;p&gt;</strong> element defines a paragraph.</li>
+                        <li>It has a start tag <strong class="inline-code">&lt;p&gt;</strong> and an end tag <strong class="inline-code">&lt;/p&gt;</strong></li>
+                    </ul>
+                    <code class="code-box">
+                        &lt;p&gt;<strong class="code-text"> My First Paragraph </strong>&lt;/p&gt;<br>
+                    </code><br>
+                    <h3>Never Skip the End Tag</h3>
+                    <p>Some HTML elements will display correctly, even if you forget the end tag:</p>
+                    <code class="code-box">
+                        &lt;html&gt;<br>
+                        &lt;body&gt;<br><br>
+                        &lt;h1&gt;<strong class="code-text"> My First Heading </strong><br>
+                        &lt;p&gt;<strong class="code-text"> My First Paragraph </strong><br><br>
+                        &lt;/body&gt;<br>
+                        &lt;/html&gt;
+                    </code>
+                    <p>However, never rely on this! Unexpected results and errors may occur if you forget the end tag!</p>
+                    <h3>Empty HTML Elements</h3>
+                    <ul id="no-bullets">
+                        <li>HTML elements with no content are called empty elements.</li>
+                        <li>The <strong class="inline-code">&lt;br&gt;</strong> tag defines a line break, and is an empty element without a closing tag:</li>
+                    </ul>
+                    <code class="code-box">
+                        <strong class="inline-code">&lt;p&gt;</strong><strong class="code-text"> This is a </strong><strong class="inline-code">&lt;br&gt;</strong><strong class="code-text"> paragraph with a line break.</strong><strong class="inline-code">&lt;/p&gt;</strong>
+                    </code>
+                    <h3>HTML is Not Case Sensitive</h3>
+                    <ul id="no-bullets">
+                        <li>HTML tags are not case sensitive: <strong class="inline-code">&lt;P&gt;</strong> means the same as <strong class="inline-code">&lt;p&gt;</strong>.</li>
+                        <li>The HTML standard does not require lowercase tags, but W3C recommends lowercase in HTML, and demands lowercase for stricter document types like XHTML.</li>
+                    </ul>
+                </article>
             </section>
             <section class="main-section" id="HTML_Attributes">
                 <header>HTML Attributes</header>
@@ -134,7 +330,9 @@
             </section>
             <section class="main-section" id="Reference">
                 <header>Reference</header>
-                <p></p>
+                <p>
+                    All the documentation in this page is taken from <a href="https://www.w3schools.com/html/default.asp">w3schools</a>
+                </p>
             </section>
         </main>
     </body>
