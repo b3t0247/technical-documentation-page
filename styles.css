@@ -1,7 +1,5 @@
 html {
     box-sizing: border-box;
-    /* background-color: black; */
-    /* color: whitesmoke; */
 }
 
 *, *::before, *::after {
@@ -32,17 +30,17 @@ body {
     margin-right: 20px;
     border-right: solid;
     background-color: rgb(46, 43, 43);
+    line-height: 3.5;
 }
 
 #no-bullets {
     list-style-type: none;
-    /* padding: 0; */
-    /* margin: 0; */
 }
 
 #navbar a {
     text-decoration: none;
     color: white;
+    
 }
 
 #navbar a:hover {
@@ -53,22 +51,18 @@ body {
     position: absolute;
     margin-left: 350px;
     margin-right: 100px;
-    /* border: 2px solid red; */
 }
 
 header {
     font-size: 25px;
     font-weight: bold;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .code-box {
     display: block;
     text-align: left;
-    /* padding-left: 30px; */
-    /* padding-top: 30px; */
-    /* padding-bottom: 30px; */
     padding: 30px;
     width: 100%;
     background-color: rgb(17, 17, 56);
@@ -88,7 +82,6 @@ header {
 
 #example-code {
     font-size: 1rem;
-    /* font-style: italic; */
 }
 
 .img-container {
@@ -108,6 +101,8 @@ header {
     padding: 0;
 }
 
-@media (max-width: 768) {
-    
+@media screen and (max-width: 900px) {
+    #navbar {
+        line-height: 2;
+    }
 }
