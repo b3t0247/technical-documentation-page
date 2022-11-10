@@ -19,7 +19,6 @@
                 <li><a class="nav-link" href="#HTML_Paragraphs">HTML Paragraphs</a></li>
                 <li><a class="nav-link" href="#HTML_Styles">HTML Styles</a></li>
                 <li><a class="nav-link" href="#HTML_Text_Formatting">HTML Text Formatting</a></li>
-                <li><a class="nav-link" href="#HTML_Colors">HTML Colors</a></li>
                 <li><a class="nav-link" href="#HTML_Images">HTML Images</a></li>
                 <li><a class="nav-link" href="#HTML_Links">HTML Links</a></li>
                 <li><a class="nav-link" href="#Reference">Reference</a></li>
@@ -124,7 +123,7 @@
                         <li>Save the file on your computer. Select File > Save as in the Notepad menu.</li>
                         <li>Name the file "index.htm" and set the encoding to UTF-8 (which is the preferred encoding for HTML files).</li><br>
                         <img src="./images/img_saveas.png" alt="Save as">
-                        <p><strong class="tip">Tip:</strong> You can use either .htm or .html as file extension. There is no difference; it is up to you.</p>
+                        <p><strong class="tip"><mark>Tip:</mark></strong> You can use either .htm or .html as file extension. There is no difference; it is up to you.</p>
                     </ul>
                     <h3>Step 4: View the HTML Page in Your Browser</h3>
                     <ul id="no-bullets">
@@ -216,7 +215,7 @@
                         <li><strong class="inline-code">&lt;h1&gt;</strong> My First Heading <strong class="inline-code">&lt;/h1&gt;</strong></li>
                         <li><strong class="inline-code">&lt;p&gt;</strong> first paragraph. <strong class="inline-code">&lt;/p&gt;</strong></li>
                     </ul>
-                    <p><strong class="tip">TIP:</strong> Some HTML elements have no content (like the <strong class="inline-code">&lt;br&gt;</strong> element). These elements are called empty elements. Empty elements do not have an end tag!</p>
+                    <p><strong class="tip"><mark>Tip:</mark></strong> Some HTML elements have no content (like the <strong class="inline-code">&lt;br&gt;</strong> element). These elements are called empty elements. Empty elements do not have an end tag!</p>
                     <h3>Nested HTML Elements</h3>
                     <ul id="no-bullets">
                         <li>HTML elements can be nested (this means that elements can contain other elements).</li>
@@ -327,7 +326,7 @@
                         <li>1. <strong>Absolute URL</strong> - Links to an external image that is hosted on another website. Example: src="https://www.w3schools.com/images/img_girl.jpg".</li>
                         <li><strong>Notes:</strong> External images might be under copyright. If you do not get permission to use it, you may be in violation of copyright laws. In addition, you cannot control external images; it can suddenly be removed or changed.</li><br>
                         <li>2. <strong>Relative URL</strong>- Links to an image that is hosted within the website. Here, the URL does not include the domain name. If the URL begins without a slash, it will be relative to the current page. Example: src="img_girl.jpg". If the URL begins with a slash, it will be relative to the domain. Example: src="/images/img_girl.jpg".</li><br>
-                        <li><strong class="tip">Tip:</strong> It is almost always best to use relative URLs. They will not break if you change domain.</li>
+                        <li><strong class="tip"><mark>Tip:</mark></strong> It is almost always best to use relative URLs. They will not break if you change domain.</li>
                     </ul>
                     <h3>The alt Attribute</h3>
                     <p>The required <strong class="inline-code">alt</strong> attribute for the <strong class="inline-code">&lt;img&gt;</strong> tag specifies an alternate text for an image, if the image for some reason cannot be displayed. This can be due to a slow connection, or an error in the <strong class="inline-code">src</strong> attribute, or if the user uses a screen reader.</p>
@@ -410,15 +409,80 @@
             </section>
             <section class="main-section" id="HTML_Styles">
                 <header>HTML Styles</header>
-                <p></p>
+                <article>
+                    <p>The HTML <strong class="inline-code">style</strong> attribute is used to add styles to an element, such as color, font, size, and more.</p>
+                    <code class="code-box">
+                        <strong class="code-text" id="example-code">Example:</strong><br><br>
+                        <strong style="color: red;">I am Red </strong><br><br>
+                        <strong style="color: blue;">I am Blue </strong><br>
+                        <strong style="font-size: 50px;color:white;">I am Big </strong><br>
+                    </code><br>
+                    <h3>The HTML Style Attribute</h3>
+                    <p>Setting the style of an HTML element, can be done with the <strong class="inline-code">style</strong> attribute.</p>
+                    <p>The HTML <strong class="inline-code">style</strong> attribute has the following syntax:</p>
+                    <code class="code-box">
+                        <strong class="inline-code">&lt;tagname style="property:value;"&gt;</strong>
+                    </code><br>
+                    <p>The property is a CSS property. The value is a CSS value.</p>
+                    <h3>Background Color</h3>
+                    <p>The CSS <strong class="inline-code">background-color</strong> property defines the background color for an HTML element.</p>
+                    <code class="code-box">
+                        <strong class="code-text" id="example-code">Example:</strong><br><br>
+                        &lt;body style="background-color: powderblue;"&gt;<br><br>
+                        &lt;h1&gt;<strong class="code-text"> This is a heading </strong>&lt;/h1&gt;<br>
+                        &lt;p&gt;<strong class="code-text"> This is a paragraph </strong>&lt;/p&gt;<br><br>
+                        &lt;/body&gt;<br>            
+                    </code><br>
+                    <h3>Text Color</h3>
+                    <p>The CSS color property defines the text color for an HTML element:</p>
+                    <code class="code-box">
+                        <strong class="code-text" id="example-code">Example:</strong><br><br>
+                        &lt;h1 style="color:blue;"&gt;<strong class="code-text"> This is a heading </strong>&lt;/h1&gt;<br>
+                        &lt;p style="color:red;"&gt;<strong class="code-text"> This is a paragraph. </strong>&lt;/p&gt;<br>
+                    </code><br>
+                    <h3>Fonts</h3>
+                    <p>The CSS font-family property defines the font to be used for an HTML element:</p>
+                    <code class="code-box">
+                        <strong class="code-text" id="example-code">Example:</strong><br><br>
+                        &lt;h1 style="font-family:verdana;"&gt;<strong class="code-text"> This is a heading </strong>&lt;/h1&gt;<br>
+                        &lt;p style="font-family:courier;"&gt;<strong class="code-text"> This is a paragraph. </strong>&lt;/p&gt;<br>
+                    </code><br>
+                    <h3>Text Size</h3>
+                    <p>The CSS <strong class="inline-code">font-size</strong> property defines the text size for an HTML element:</p>
+                    <code class="code-box">
+                        <strong class="code-text" id="example-code">Example:</strong><br><br>
+                        &lt;h1 style="font-size:300%;"&gt;<strong class="code-text"> This is a heading </strong>&lt;/h1&gt;<br>
+                        &lt;p style="font-size:160%;"&gt;<strong class="code-text"> This is a paragraph. </strong>&lt;/p&gt;<br>
+                    </code><br>
+                </article>
             </section>
             <section class="main-section" id="HTML_Text_Formatting">
                 <header>HTML Text Formatting</header>
-                <p></p>
-            </section>
-            <section class="main-section" id="HTML_Colors">
-                <header>HTML Colors</header>
-                <p></p>
+                <article>
+                    <p>HTML contains several elements for defining text with a special meaning.</p>
+                    <h3>HTML Formatting Elements</h3>
+                    <p>Formatting elements were designed to display special types of text:</p>
+                    <ul>
+                        <li><strong class="inline-code">&lt;b&gt;</strong> - <b>Bold text</b></li>
+                        <li><strong class="inline-code">&lt;strong&gt;</strong> - <strong>Important text</strong></li>
+                        <li><strong class="inline-code">&lt;i&gt;</strong> - <i>Italic text</i></li>
+                        <li><strong class="inline-code">&lt;em&gt;</strong> - <em>Emphasized text</em></li>
+                        <li><strong class="inline-code">&lt;mark&gt;</strong> - <mark>Marked text</mark></li>
+                        <li><strong class="inline-code">&lt;small&gt;</strong> - <small>Smaller text</small></li>
+                        <li><strong class="inline-code">&lt;del&gt;</strong> - <del>Deleted text</del></li>
+                        <li><strong class="inline-code">&lt;ins&gt;</strong> - <ins>Inserted text</ins></li>
+                        <li><strong class="inline-code">&lt;sub&gt;</strong> - <sub>Subscript text</sub></li>
+                        <li><strong class="inline-code">&lt;sup&gt;</strong> - <sup>Superscript text</sup></li>
+                    </ul>
+                    <h3>HTML <strong class="inline-code">&lt;b&gt;</strong> and <strong class="inline-code">&lt;strong&gt;</strong> Elements</h3>
+                    <p>The HTML <strong class="inline-code">&lt;b&gt;</strong> element defines bold text, without any extra importance.</p>
+                    <p>The HTML <strong class="inline-code">&lt;strong&gt;</strong> element defines text with strong importance. The content inside is typically displayed in bold.</p>
+                    <h3>HTML <strong class="inline-code">&lt;i&gt;</strong> and <strong class="inline-code">&lt;em&gt;</strong> Elements</h3>
+                    <p>The HTML <strong class="inline-code">&lt;i&gt;</strong> element defines a part of text in an alternate voice or mood. The content inside is typically displayed in italic.</p>
+                    <p><strong class="tip"><mark>Tip:</mark></strong> The <strong class="inline-code">&lt;i&gt;</strong> tag is often used to indicate a technical term, a phrase from another language, a thought, a ship name, etc.</p>
+                    <p>The HTML <strong class="inline-code">&lt;em&gt;</strong> element defines emphasized text. The content inside is typically displayed in italic.</p>
+                    <P><strong class="tip" ><mark>Tip:</mark></strong> A screen reader will pronounce the words in <strong class="inline-code">&lt;em&gt;</strong> with an emphasis, using verbal stress.</P>
+                </article>
             </section>
             <section class="main-section" id="HTML_Images">
                 <header>HTML Images</header>
