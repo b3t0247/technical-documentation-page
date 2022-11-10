@@ -91,6 +91,23 @@ header {
     /* font-style: italic; */
 }
 
+.img-container {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.img {
+    position: relative;
+    display: flex;
+    width: 370px;
+    height: 330px;
+    margin: 0;
+    padding: 0;
+}
+
 @media (max-width: 768) {
     
 }

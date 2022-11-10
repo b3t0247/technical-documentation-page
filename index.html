@@ -486,11 +486,72 @@
             </section>
             <section class="main-section" id="HTML_Images">
                 <header>HTML Images</header>
-                <p></p>
+                <article>
+                    <p>Images can improve the design and the appearance of a web page.</p>
+                    <div class="img-container">
+                        <div class="img"><img src="./images/pic_trulli.jpg" alt=""></div>
+                        <div class="img"><img src="./images/img_girl.jpg" alt=""></div>
+                        <div class="img"><img src="./images/img_chania.jpg" alt=""></div>
+                    </div>
+                    <h3>HTML Images Syntax</h3>
+                    <ul id="no-bullets">
+                        <li>The HTML <strong class="inline-code">&lt;img&gt;</strong> tag is used to embed an image in a web page.</li><br>
+                        <li>Images are not technically inserted into a web page; images are linked to web pages. The <strong class="inline-code">&lt;img&gt;</strong> tag creates a holding space for the referenced image.</li><br>
+                        <li>The <strong class="inline-code">&lt;img&gt;</strong> tag is empty, it contains attributes only, and does not have a closing tag.</li><br>
+                        <li>The <strong class="inline-code">&lt;img&gt;</strong> tag has two required attributes: <br>
+                            <ul>
+                                <li><strong class="inline-code">src</strong> - Specifies the path to the image</li>
+                                <li><strong class="inline-code">alt</strong> - Specifies an alternate text for the image</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h3>The <strong class="inline-code">src</strong> Attribute</h3>
+                    <p>The required <strong class="inline-code">src</strong> attribute specifies the path (URL) to the image.</p>
+                    <p><strong>Note:</strong> When a web page loads, it is the browser, at that moment, that gets the image from a web server and inserts it into the page. Therefore, make sure that the image actually stays in the same spot in relation to the web page, otherwise your visitors will get a broken link icon. The broken link icon and the alt text are shown if the browser cannot find the image.</p>
+                    <code class="code-box">
+                        <strong class="code-text" id="example-code">Example:</strong><br><br>
+                        <strong class="inline-code">&lt;img src="img_chania.jpg" alt="Flowers in Chania"&gt;</strong>
+                    </code><br>
+                    <h3>The <strong class="inline-code">alt</strong> Attribute</h3>
+                    <p>The required <strong class="inline-code">alt</strong> attribute provides an alternate text for an image, if the user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).</p>
+                    <p>The value of the <strong class="inline-code">alt</strong> attribute should describe the image:</p>
+                    <code class="code-box">
+                        <strong class="code-text" id="example-code">Example:</strong><br><br>
+                        <strong class="inline-code">&lt;img src="img_chania.jpg" alt="Flowers in Chania"&gt;</strong>
+                    </code><br>
+                    <p>If a browser cannot find an image, it will display the value of the alt attribute:</p>
+                </article>
             </section>
             <section class="main-section" id="HTML_Links">
                 <header>HTML Links</header>
-                <p></p>
+                <article>
+                    <p>Links are found in nearly all web pages. Links allow users to click their way from page to page.</p>
+                    <h3>HTML Links - Hyperlinks</h3>
+                    <p>HTML links are hyperlinks. You can click on a link and jump to another document. When you move the mouse over a link, the mouse arrow will turn into a little hand.</p>
+                    <p><strong>Note:</strong> A link does not have to be text. A link can be an image or any other HTML element!</p>
+                    <h3>HTML Links - Syntax</h3>
+                    <p>The HTML <strong class="inline-code">&lt;a&gt;</strong> tag defines a hyperlink. It has the following syntax:</p>
+                    <code class="code-box">
+                        <strong class="code-text" id="example-code">Example:</strong><br><br>
+                        <strong class="inline-code">&lt;a href="url"&gt;</strong> text<strong class="inline-code">&lt;/a&gt;</strong>
+                    </code><br>
+                    <ul id="no-bullets">
+                        <li>The most important attribute of the <strong class="inline-code">&lt;a&gt;</strong> element is the href attribute, which indicates the link's destination.</li>
+                        <li>The link text is the part that will be visible to the reader.</li>
+                        <li>Clicking on the link text, will send the reader to the specified URL address.</li>
+                    </ul>
+                    <code class="code-box">
+                        <strong class="code-text" id="example-code">Example:</strong><br><br>
+                        <strong class="inline-code">&lt;a href="https://www.w3schools.com/"&gt;</strong> W3Schools.com!<strong class="inline-code">&lt;/a&gt;</strong>
+                    </code><br>
+                    <p>By default, links will appear as follows in all browsers:</p>
+                    <ul>
+                        <li>An unvisited link is underlined and blue</li>
+                        <li>A visited link is underlined and purple</li>
+                        <li>An active link is underlined and red</li>
+                    </ul>
+                    <p><strong class="tip"><mark>Tip:</mark></strong> Links can of course be styled with CSS, to get another look!</p>
+                </article>
             </section>
             <section class="main-section" id="Reference">
                 <header>Reference</header>
